@@ -1,0 +1,139 @@
+.formulario{
+    width:min(30rem,100% - 2rem);
+    margin:3rem auto
+}
+.formulario.largo{
+    width:min(44rem,100% - 2rem)
+}
+.formulario h1{
+    font-size:2.6rem;
+    margin-bottom:1.5rem
+}
+.duas{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem
+}
+.painel-topo{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-top:2.5rem
+}
+.painel-topo h1{
+    font-size:clamp(2.2rem,6vw,3.6rem)
+}
+.painel-topo p{
+    color:var(--suave)
+}
+.numeros{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));
+    gap:1rem;
+    margin-top:1.5rem
+}
+.numero{
+    border:.1rem solid var(--tinta);
+    background:var(--fundo2);
+    padding:1rem
+}
+.numero b{
+    display:block;
+    font:800 2rem var(--titulo)
+}
+.lista{
+    display:grid;
+    gap:.8rem
+}
+.linha{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:1rem;
+    align-items:center;
+    padding:1rem;
+    border:.1rem solid var(--linha);
+    background:#fff
+}
+.linha h3{
+    font-size:1.2rem
+}
+.linha p{
+    color:var(--suave);
+    font-size:.9rem
+}
+.linha .motivo{
+    color:var(--erro);
+    margin-top:.3rem
+}
+.linha .acoes,.avaliacao .acoes{
+    display:flex;
+    gap:.5rem;
+    flex-wrap:wrap;
+    align-items:center
+}
+.linha form,.avaliacao form{
+    margin:0
+}
+.avaliacao{
+    display:grid;
+    gap:.7rem;
+    padding:1.2rem;
+    border:.1rem solid var(--tinta);
+    background:#fff
+}
+.avaliacao h3{
+    font-size:1.5rem
+}
+.avaliacao p{
+    color:var(--suave)
+}
+.avaliacao summary{
+    list-style:none
+}
+.avaliacao summary::-webkit-details-marker{
+    display:none
+}
+.avaliacao details[open] summary{
+    margin-bottom:.8rem
+}
+.avaliacao textarea{
+    width:100%;
+    padding:.7rem;
+    border:.1rem solid var(--tinta);
+    font:inherit;
+    border-radius:.2rem;
+    margin-bottom:.6rem
+}
+.botao.pequeno{
+    padding:.4rem .8rem;
+    font-size:.85rem
+}
+.botao.perigo{
+    background:var(--erro);
+    color:#fff;
+    border-color:var(--erro)
+}
+.linha .inativo{
+    opacity:.55
+}
+.nova-categoria{
+    display:flex;
+    gap:.5rem;
+    max-width:30rem;
+    margin-bottom:1rem
+}
+.nova-categoria input{
+    flex:1;
+    min-width:0;
+    padding:.7rem;
+    border:.1rem solid var(--tinta);
+    font:inherit;
+    border-radius:.2rem
+}
+@media(max-width:55rem){
+    .linha,.duas{
+        grid-template-columns:1fr
+    }
+}

@@ -1,0 +1,136 @@
+.card{
+    display:grid;
+    gap:.5rem;
+    text-decoration:none;
+    align-content:start
+}
+
+.card .capa{
+    aspect-ratio:4/3;
+    overflow:hidden;
+    background:var(--fundo2);
+    position:relative
+}
+
+.card.alto .capa{
+    aspect-ratio:3/4
+}
+
+.card.largo .capa{
+    aspect-ratio:16/9
+}
+
+.card .capa img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .4s
+}
+
+.card:hover .capa img{
+    transform:scale(1.05)
+}
+
+.card .data{
+    color:var(--verde);
+    font-weight:700;
+    font-size:.9rem
+}
+
+.card h3{
+    font-size:1.4rem
+}
+
+.card.largo h3{
+    font-size:2rem
+}
+
+.card p{
+    color:var(--suave);
+    font-size:.92rem
+}
+
+.selo{
+    display:inline-block;
+    padding:.15rem .6rem;
+    font-weight:700;
+    font-size:.8rem;
+    border-radius:.2rem
+}
+
+.selo.pendente{
+    background:var(--ipe);
+    color:var(--tinta)
+}
+
+.selo.aprovado{
+    background:var(--verde);
+    color:#fff
+}
+
+.selo.reprovado{
+    background:var(--erro);
+    color:#fff
+}
+
+.toast{
+    position:fixed;
+    right:1rem;
+    bottom:1rem;
+    padding:.9rem 1.3rem;
+    color:#fff;
+    font-weight:600;
+    border-radius:.2rem;
+    z-index:50;
+    animation:entra .25s
+}
+
+.toast.sucesso{
+    background:var(--verde)
+}
+
+.toast.erro{
+    background:var(--erro)
+}
+
+@keyframes entra{
+    from{
+        transform:translateY(1rem);
+        opacity:0
+    }
+}
+
+.fundo-modal{
+    position:fixed;
+    inset:0;
+    background:rgba(18,38,29,.6);
+    display:grid;
+    place-items:center;
+    z-index:40;
+    padding:1rem
+}
+
+.modal{
+    background:var(--fundo);
+    padding:1.8rem;
+    max-width:26rem;
+    width:100%;
+    border:.1rem solid var(--tinta)
+}
+
+.modal p{
+    margin:.8rem 0 1.4rem
+}
+
+.modal .acoes{
+    display:flex;
+    gap:.8rem;
+    justify-content:flex-end
+}
+
+.vazio{
+    padding:3rem 1rem;
+    text-align:center;
+    border:.1rem dashed var(--linha);
+    color:var(--suave)
+}

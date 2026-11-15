@@ -1,0 +1,177 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Shows",
+            "ativa": true
+        },
+        {
+            "id": 2,
+            "nome": "Feiras e gastronomia",
+            "ativa": true
+        },
+        {
+            "id": 3,
+            "nome": "Festivais",
+            "ativa": true
+        },
+        {
+            "id": 4,
+            "nome": "Exposições",
+            "ativa": true
+        },
+        {
+            "id": 5,
+            "nome": "Turismo",
+            "ativa": true
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Gabriel Cavalieri",
+            "email": "cavalieri2005@hotmail.com",
+            "senha": "$2y$10$hnRm4MMO.55gNwE419b07uYmwlKQBEAyfQtDkv\/I0tly.\/mv.j83.",
+            "perfil": "organizador",
+            "ativo": true
+        },
+        {
+            "id": 2,
+            "nome": "Henrique Ribeiro",
+            "email": "curador@gmail.com",
+            "senha": "$2y$10$I51GbBcQMzZJdDXX8joeB.AAiOc2vYGnqXkyXCJGT7LI3VGyNU0R.",
+            "perfil": "curador",
+            "ativo": true
+        },
+        {
+            "id": 3,
+            "nome": "adm",
+            "email": "adm@gmail.com",
+            "senha": "$2y$10$vtUxi3\/Od.22qdRjxKG51O2Le9rBe7n.FmVY8Wk1lSXR2lJJVNa12",
+            "perfil": "admin",
+            "ativo": true
+        }
+    ],
+    "eventos": [
+        {
+            "id": 1,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": true,
+            "categoriaId": 3,
+            "nome": "Festival Pantaneiro de Música",
+            "descricao": "Três palcos com artistas de Mato Grosso do Sul, do chamamé ao rock regional, em uma noite inteira ao ar livre no parque.",
+            "inicio": 1794585600,
+            "fim": 1794607200,
+            "local": "Parque das Nações Indígenas",
+            "endereco": "Av. Afonso Pena, Jardim dos Estados",
+            "imagens": [
+                "nacoes.png"
+            ],
+            "ingresso": {
+                "tipo": "pago",
+                "valor": 40
+            }
+        },
+        {
+            "id": 2,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": true,
+            "categoriaId": 2,
+            "nome": "Noite do Sobá na Feira Central",
+            "descricao": "Degustação de sobá, chipa e pratos da culinária sul-mato-grossense com música ao vivo nas barracas.",
+            "inicio": 1794502800,
+            "fim": 1794517200,
+            "local": "Feira Central",
+            "endereco": "Rua 14 de Julho, Centro",
+            "imagens": [
+                "feira-central.jpg"
+            ],
+            "ingresso": {
+                "tipo": "gratuito",
+                "valor": 0
+            }
+        },
+        {
+            "id": 3,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": false,
+            "categoriaId": 5,
+            "nome": "Entardecer no Bioparque Pantanal",
+            "descricao": "Visita guiada ao fim da tarde pelos aquários e pela trilha de biodiversidade, com conversa sobre a fauna do Pantanal.",
+            "inicio": 1794754800,
+            "fim": 1794765600,
+            "local": "Bioparque Pantanal",
+            "endereco": "Rua Ceará, Miguel Couto",
+            "imagens": [
+                "bioparque.webp"
+            ],
+            "ingresso": {
+                "tipo": "pago",
+                "valor": 35
+            }
+        },
+        {
+            "id": 4,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": false,
+            "categoriaId": 1,
+            "nome": "Viola de Cocho ao pôr do sol",
+            "descricao": "Roda de viola de cocho e cururu à beira do Anhanduí, para ver o sol cair com música de raiz.",
+            "inicio": 1794931200,
+            "fim": 1794942000,
+            "local": "Orla Morena",
+            "endereco": "Av. Ernesto Geisel, Orla Morena",
+            "imagens": [
+                "orla.webp"
+            ],
+            "ingresso": {
+                "tipo": "gratuito",
+                "valor": 0
+            }
+        },
+        {
+            "id": 5,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": false,
+            "categoriaId": 4,
+            "nome": "Pantanal em Foco: exposição fotográfica",
+            "descricao": "Quarenta fotografias de fotógrafos locais sobre a cheia, a seca e os povos do Pantanal.",
+            "inicio": 1795161600,
+            "fim": 1796144400,
+            "local": "Parque das Nações Indígenas",
+            "endereco": "Av. Afonso Pena, Jardim dos Estados",
+            "imagens": [
+                "nacoes.png"
+            ],
+            "ingresso": {
+                "tipo": "gratuito",
+                "valor": 0
+            }
+        },
+        {
+            "id": 6,
+            "organizadorId": 0,
+            "status": "aprovado",
+            "destaque": false,
+            "categoriaId": 3,
+            "nome": "Festival de Inverno da Feira",
+            "descricao": "Edição anterior do festival de caldos e música de viola.",
+            "inicio": 1793379600,
+            "fim": 1793394000,
+            "local": "Feira Central",
+            "endereco": "Rua 14 de Julho, Centro",
+            "imagens": [
+                "feira"
+            ],
+            "ingresso": {
+                "tipo": "gratuito",
+                "valor": 0
+            }
+        }
+    ]
+}
